@@ -7,7 +7,7 @@
 	compatible = "widora,neo", "mediatek,mt7628an-soc";
 
 	chosen {
-		bootargs = "console=ttyS0,115200";
+		bootargs = "console=ttyS0,57600";
 	};
 
 	memory@0 {
@@ -33,7 +33,7 @@
 
 		wps {
 			label = "reset";
-			gpios = <&gpio1 6 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio1 7 GPIO_ACTIVE_LOW>;
 			linux,code = <KEY_WPS_BUTTON>;
 		};
 	};
